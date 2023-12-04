@@ -2,11 +2,9 @@
 
 
 def print_reversed_list_integer(my_list=[]):
-    if not my_list == []:
+    if len(my_list) > 0:
         for elt in reversed(my_list):
             print("{:d}".format(elt))
-    else:
-        print()
 
 
 if __name__ == "__main__":
