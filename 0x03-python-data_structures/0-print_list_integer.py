@@ -3,7 +3,7 @@
 
 def print_list_integer(list):
     for elt in list:
-        print("{}".format(elt))
+        print("{:d}".format(elt))
 
 
 if __name__ == "__main__":
