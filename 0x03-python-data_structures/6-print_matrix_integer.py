@@ -10,7 +10,7 @@ def print_matrix_integer(matrix=[[]]):
                     print("{:d}".format(matrix[i][j]), end=" ")
             print()
     else:
-        print()
+        return
 
 
 if __name__ == "__main__":
