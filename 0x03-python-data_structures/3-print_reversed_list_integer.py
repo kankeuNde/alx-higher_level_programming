@@ -3,7 +3,7 @@
 
 def print_reversed_list_integer(my_list=[]):
     for elt in reversed(my_list):
-        print("{}".format(elt))
+        print("{:d}".format(elt))
 
 
 if __name__ == "__main__":
