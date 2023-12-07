@@ -2,7 +2,8 @@
 
 def update_dictionary(a_dictionary, key, value):
     entry = {key: value}
-    return a_dictionary.update(entry)
+    a_dictionary.update(entry)
+    return a_dictionary
 
 
 if __name__ == "__main__":
