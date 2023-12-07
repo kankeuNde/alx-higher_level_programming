@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 
 def print_sorted_dictionary(a_dictionary):
-    list_of_keys = list(a_dictionary.keys())
-    list_of_keys.sort()
-    new_dict = {i:a_dictionary[i] for i in list_of_keys}
-    return new_dict
+    if a_dictionary:
+        for entry in sorted(list(a_dictionary.keys())):
+            print("{}: {}".format(entry, a_dictionary[entry]))
 
 
 if __name__ == "__main__":
