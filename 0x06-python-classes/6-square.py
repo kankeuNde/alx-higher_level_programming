@@ -27,7 +27,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if(not isinstance(value, tuple) or
+        if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(elt, value) for elt in value) or
                 not all(elt >= 0 for elt in value)):
@@ -55,8 +55,9 @@ class Square:
             none
         """
         if self.__size == 0:
-            print()
+            print("")
         else:
+            [print("") for i in range(0, self.__position[1])]
             for i in range(self.__size):
                 [print(" ", end="") for j in range(0, self.__position[0])]
                 [print("#", end="") for k in range(0, self.__size)]
