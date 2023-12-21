@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+    Square class design
+    """
+
 
 class Square:
     """ Square class creation """
